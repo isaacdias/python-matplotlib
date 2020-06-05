@@ -11,12 +11,12 @@ x = np.arange(len(labels))  # the label locations
 width = 0.48  # the width of the bars
 
 fig, ax = plt.subplots()
-rects1 = ax.bar(x - width/2, men_means,  width, color='#8B0000', label='Mulheres')
-rects2 = ax.bar(x + width/2, women_means, width, color='#2F4F4F', label='Homens')
+rects1 = ax.bar(x - width/2, men_means,  width, color='#8B008B', label='Mulheres')
+rects2 = ax.bar(x + width/2, women_means, width, color='#FF4500', label='Homens')
 
 # Add some text for labels, title and custom x-axis tick labels, etc.
 ax.set_ylabel('Matriculas (Milhão)')
-ax.set_title('Alunos Ension Médio - Brasil')
+ax.set_title('Alunos Ensino Médio - Brasil')
 ax.set_xticks(x)
 ax.set_xticklabels(labels)
 ax.legend()

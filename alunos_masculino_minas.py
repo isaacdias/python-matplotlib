@@ -4,19 +4,19 @@ import numpy as np
 
 
 labels = ['2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019']
-men_means = [38.671, 39.055, 38.598, 38.270, 38.009, 38.133, 39.083, 39.514, 40.734, 40.515]
-women_means = [41.595, 41.686, 39.572, 40.436, 40.286, 39.962, 41.048, 41.825, 43.127, 42.704]
+men_means = [864.199, 819.127, 769.311, 743.392, 736.977, 719.936, 714.581, 717.254, 710.028, 687.871]
+women_means = [712.892, 698.361, 694.471, 689.900, 679.458, 658.068, 629.947, 599.161, 584.986, 578.887]
 
 x = np.arange(len(labels))  # the label locations
-width = 0.45  # the width of the bars
+width = 0.48  # the width of the bars
 
 fig, ax = plt.subplots()
-rects1 = ax.bar(x - width/2, men_means,  width, color='#8B008B', label='Mulheres')
-rects2 = ax.bar(x + width/2, women_means, width, color='#FF4500', label='Homens')
+rects1 = ax.bar(x - width/2, men_means,  width, color='#2E8B57', label='Anos Iniciais')
+rects2 = ax.bar(x + width/2, women_means, width, color='#FF6347', label='Anos Finais')
 
 # Add some text for labels, title and custom x-axis tick labels, etc.
 ax.set_ylabel('Matriculas')
-ax.set_title('Alunos Ensino Fundamental Uberlândia MG')
+ax.set_title('Homens Ensino Fundamental - Minas Gerais')
 ax.set_xticks(x)
 ax.set_xticklabels(labels)
 ax.legend()
