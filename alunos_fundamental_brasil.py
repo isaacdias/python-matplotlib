@@ -4,8 +4,8 @@ import numpy as np
 
 
 labels = ['2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019']
-men_means = [1621916, 1646745, 1686331, 1721169, 1750390, 1751189, 1758945, 1753047, 1780000, 1761999]
-women_means = [377602, 392516, 408682, 420507, 433877, 435965, 437452, 439177, 446423, 450019]
+men_means = [15036289, 14717800, 14386974, 14093183, 13796038, 13492402, 13376398, 13203890, 13145500, 13031953]
+women_means = [16111918, 16111918, 15439653, 15094419, 14775474, 14438808, 14315080, 14144190, 14038470, 13891777]
 
 x = np.arange(len(labels))  # the label locations
 width = 0.48  # the width of the bars
@@ -16,7 +16,7 @@ rects2 = ax.bar(x + width/2, women_means, width, color='#2F4F4F', label='Homens'
 
 # Add some text for labels, title and custom x-axis tick labels, etc.
 ax.set_ylabel('Matriculas (Milhão)')
-ax.set_title('Brasil - Séries da Educação Básica ')
+ax.set_title('Alunos Ensino Fundamental Brasil')
 ax.set_xticks(x)
 ax.set_xticklabels(labels)
 ax.legend()

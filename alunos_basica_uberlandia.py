@@ -4,11 +4,11 @@ import numpy as np
 
 
 labels = ['2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019']
-men_means = [1621916, 1646745, 1686331, 1721169, 1750390, 1751189, 1758945, 1753047, 1780000, 1761999]
-women_means = [377602, 392516, 408682, 420507, 433877, 435965, 437452, 439177, 446423, 450019]
+men_means = [68.995, 70.333, 70.362, 70.683, 70.545, 70.191, 71.696, 72.810, 74.532, 74.200]
+women_means = [70.197, 71.384, 71.439, 71.993, 72.750, 72.089, 73.705, 74.873, 76.701, 75.243]
 
 x = np.arange(len(labels))  # the label locations
-width = 0.48  # the width of the bars
+width = 0.45  # the width of the bars
 
 fig, ax = plt.subplots()
 rects1 = ax.bar(x - width/2, men_means,  width, color='#8B0000', label='Mulheres')
@@ -16,7 +16,7 @@ rects2 = ax.bar(x + width/2, women_means, width, color='#2F4F4F', label='Homens'
 
 # Add some text for labels, title and custom x-axis tick labels, etc.
 ax.set_ylabel('Matriculas (Milhão)')
-ax.set_title('Brasil - Séries da Educação Básica ')
+ax.set_title('Alunos Séries da Educação Básica - Uberlândia MG ')
 ax.set_xticks(x)
 ax.set_xticklabels(labels)
 ax.legend()
